@@ -54,11 +54,13 @@ dkms.conf
 .vscode/Makefile
 build/*.rom
 build/*.nib
+build/*.dsk
 .vscode/Makefile
 .gitattributes
 Makefile
 .DS_Store
 src/.DS_Store
+build/.DS_Store
 src/device/.DS_Store
 src/machine/.DS_Store
 .gitignore
