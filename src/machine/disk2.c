@@ -27,7 +27,7 @@
 //========================================== MEMORY MAPPED SOFT SWITCHES HANDLER
 // this function is called from readMem and writeMem
 // it complements both functions when address is in page $C0
-// code  from 
+// code partial from, original sources is below link
 // https://github.com/ArthurFerreira2/reinette-II-plus/blob/master/reinetteII%2B.c
 
 //====================================================================== PADDLES

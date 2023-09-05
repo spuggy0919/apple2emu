@@ -8,4 +8,8 @@
  ## HAL Apple ii, machine simuemultor layers
  ### This layer has mos6502 cpu, keyboard, video, memory, clock, language card, disk II, etc.
 
-
+## Frameworks 
+### put below framworks into /Library/Frameworks
+SDL2.framework
+SDL2_ttf.framework
+SDL2_image.framework

@@ -52,7 +52,14 @@ Mkfile.old
 dkms.conf
 #user files
 .vscode/Makefile
-build/*.*
+build/*.rom
+build/*.nib
 .vscode/Makefile
 .gitattributes
 Makefile
+.DS_Store
+src/.DS_Store
+src/device/.DS_Store
+src/machine/.DS_Store
+.gitignore
+.vscode/setting*.json
