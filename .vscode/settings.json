@@ -1,0 +1,20 @@
+{
+    "files.associations": {
+        "__node_handle": "c",
+        "__threading_support": "c",
+        "__bit_reference": "c",
+        "atomic": "c",
+        "bitset": "c",
+        "__memory": "c",
+        "limits": "c",
+        "locale": "c",
+        "optional": "c",
+        "ratio": "c",
+        "system_error": "c",
+        "tuple": "c",
+        "type_traits": "c",
+        "vector": "c",
+        "chrono": "c",
+        "cstddef": "c"
+    }
+}

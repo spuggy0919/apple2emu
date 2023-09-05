@@ -1,0 +1,87 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "Testing",
+			"command": "/usr/bin/clang",
+			"args": [
+				"-fcolor-diagnostics",
+				"-fansi-escape-codes",
+				"-g",
+				"${workspaceFolder}/src/Test/*.c",
+				"-I ",
+				"${workspaceFolder}/src/Test",
+				"-I",
+				"/Library/Frameworks/SDL2.framework/Headers",
+				"-I",
+				"/Library/Frameworks/SDL2_image.framework/Headers",
+				"-I",
+				"/Library/Frameworks/SDL2_ttf.framework/Headers",
+				"-F/Library/Frameworks",
+				"-framework",
+				"SDL2",
+				"-framework",
+				"SDL2_ttf",
+				"-framework",
+				"SDL2_image",
+				"-Wall",
+				"-o",
+				"${workspaceFolder}/build/test"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}/src/Test"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "編譯器: /usr/bin/clang"
+		},
+		{
+			"type": "cppbuild",
+			"label": "apple2emu",
+			"command": "/usr/bin/clang",
+			"args": [
+				"-fcolor-diagnostics",
+				"-fansi-escape-codes",
+				"${workspaceFolder}/src/*.c",
+				"${workspaceFolder}/src/device/*.c",
+				"${workspaceFolder}/src/machine/*.c",
+				"-I",
+				"${workspaceFolder}/src/device",
+				"-I",
+				"${workspaceFolder}/src/machine",
+				"-I",
+				"/library/Frameworks/SDL2.framework/Headers",
+				"-I",
+				"/library/Frameworks/SDL2_image.framework/Headers",
+				"-I",
+				"/library/Frameworks/SDL2_ttf.framework/Headers",
+				"-F/library/Frameworks",
+				"-framework",
+				"SDL2",
+				"-framework",
+				"SDL2_ttf",
+				"-framework",
+				"SDL2_image",
+				"--std=c99",
+				"-Wall",
+				"-o",
+				"${workspaceFolder}/build/apple2emu"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}/src"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "編譯器: /usr/bin/clang"
+		}
+	]
+}
+

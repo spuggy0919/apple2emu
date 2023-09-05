@@ -1,0 +1,49 @@
+{
+    "configurations": [
+        {
+            "name": "Testing",
+            "type": "cppdbg",
+            "request": "launch",
+            // "program" is the target file diretory
+            // "program": "${workspaceFolder}/build/${fileBasenameNoExtension}",
+            "program": "${workspaceFolder}/build/test",
+            "args": [],
+            "stopAtEntry": true, // original false
+            //"cwd": "${workspaceFolder}/../build",// Have changed
+            //"cwd": "${fileDirName}", ${workspaceFolder}/../build
+            // Changes the current working directory directive ("cwd") to the folder
+            // where main.cpp is.
+            // This "cwd" is the same as "cwd" in the tasks.json 
+            // That's the source files directory
+            "cwd": "${workspaceFolder}/src/Test",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "preLaunchTask": "Testing"
+        },
+        {
+            "name": "apple2emu",
+            "type": "cppdbg",
+            "request": "launch",
+            // "program" is the target file diretory
+            // "program": "${workspaceFolder}/build/${fileBasenameNoExtension}",
+            "program": "${workspaceFolder}/build/apple2emu",
+            "args": [],
+            "stopAtEntry": true, // original false
+            //"cwd": "${workspaceFolder}/../build",// Have changed
+            //"cwd": "${fileDirName}", ${workspaceFolder}/../build
+            // Changes the current working directory directive ("cwd") to the folder
+            // where main.cpp is.
+            // This "cwd" is the same as "cwd" in the tasks.json 
+            // That's the source files directory
+            "cwd": "${workspaceFolder}/src",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "preLaunchTask": "apple2emu"
+        }
+
+
+    ],
+    "version": "2.0.0"
+}
